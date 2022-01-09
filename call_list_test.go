@@ -44,6 +44,7 @@ var _ = Describe("Call List", func() {
 		Expect(actual).Should(Equal(expected))
 	})
 
+	
 	It("should be possible to add pointer call", func() {
 		Expect(calls).Should(HaveLen(0))
 		calls.Add("*bytes.Buffer", "WriteString")
